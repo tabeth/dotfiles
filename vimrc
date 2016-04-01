@@ -52,6 +52,7 @@ nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 "Syntastic Settings
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 
 "Delete whitespace
 autocmd FileType ruby,javascript,html,css,yml autocmd BufWritePre <buffer> :%s/\s\+$//e

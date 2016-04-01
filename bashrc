@@ -115,14 +115,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Enable programmable sdb completion features.
-source ~/.sdb/.sdb-completion.bash
-
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.npm-global/bin"
 
 export NVM_DIR="/home/nkangoh/.nvm"
