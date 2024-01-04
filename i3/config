@@ -28,8 +28,6 @@ set $mod Mod1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-workspace_auto_back_and_forth yes
-
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -43,6 +41,9 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+
+# list windows
+bindsym $mod+Shift+f exec rofi -show
 # rename workspaces
 bindsym $mod+Shift+x exec i3-input -F "rename workspace to "$(i3-msg -t get_workspaces | jq -r "map(select(.focused))[0].num"):%s"" -P "New name: "
 # clear workspace name
